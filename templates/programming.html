@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% block title %}Programming{% endblock %}
+{% block content %}
+    <h3 style="position: relative; left: 50px; top: 30px; color: aliceblue;" class="float-md-start mb-0">Jobs</h3>
+    <nav style="position: relative; right: 30px;" class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link fw-bold py-1 px-0 active" href="/">Home</a>
+        <a class="nav-link fw-bold py-1 px-0 active" href="/listblog/laptrinh/programming/">Job Street</a>
+        <a class="nav-link fw-bold py-1 px-0 active" href="/listblog/laptrinh/famipython/">Python</a>
+        <a class="nav-link fw-bold py-1 px-0 active" href="/listblog/laptrinh/famicommand/">Command</a>
+        <a class="nav-link fw-bold py-1 px-0 active" href="/listblog/laptrinh/sysadmin/">Sysadmin</a>
+    </nav>
+    <div style="padding-top: 50px"></div>
+    {% for row in rows %}
+        <div>
+            <a style="margin: 13px;background-color: #3c4d4d;color: aliceblue" class="nav-link fw-bold py-1 px-0" href={{row[1]}} target="_blank">{{row[0]}}</a>
+        </div>
+    {% endfor %}
+</body>
+{% endblock %}
