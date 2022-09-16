@@ -21,5 +21,7 @@ def get_job():
         if c.execute(f"SELECT link FROM jobs WHERE link = '{link_job}'").fetchone() is None:
             list_job.append((titl, link_job))
     c.executemany("INSERT INTO jobs VALUES(?, ?)", list_job)
+    conn.commit()
     c.execute('SELECT * FROM jobs')
     return render_template('programming.html', rows = c.fetchall())
+
