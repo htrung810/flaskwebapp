@@ -16,3 +16,7 @@ def list_bloger():
 @homepg.route('/listblog/dientu/')
 def electrical_ss():
     return render_template('electrical.html')
+
+@homepg.route('/contact/')
+def contact():
+    return render_template('contact.html')
