@@ -12,7 +12,7 @@ except Exception:
 r = requests.get("https://api.github.com/repos/awesome-jobs/vietnam/issues").json()
 
 
-@jobs.route('/listblog/laptrinh/programming/')
+@jobs.route('/laptrinh/jobs/')
 def get_job():
     list_job = []
     for add_job in r:
