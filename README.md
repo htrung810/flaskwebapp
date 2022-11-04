@@ -1,4 +1,6 @@
 # flaskwebapp
+https://flaskfamilug.herokuapp.com/
+(hiện tại app đang có 1 số vấn đề về template)
 
 ## 1. Installation
 ```bash
