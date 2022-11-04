@@ -17,7 +17,7 @@ except Exception:
 
 
 #famipython
-@familug.route('/laptrinh/famipython/')
+@familug.route('/listblog/laptrinh/famipython/')
 def fami_python():
     r = requests.get("https://www.familug.org/search/label/Python")
     tree = BeautifulSoup(markup= r.text, features="html.parser")
@@ -35,7 +35,7 @@ def fami_python():
 
 
 #fami command
-@familug.route('/laptrinh/famicommand/')
+@familug.route('/listblog/laptrinh/famicommand/')
 def fami_command():
     r = requests.get("https://www.familug.org/search/label/Command")
     tree = BeautifulSoup(markup= r.text, features="html.parser")
@@ -53,7 +53,7 @@ def fami_command():
 
 
 #fami sysadmin
-@familug.route('/laptrinh/sysadmin/')
+@familug.route('/listblog/laptrinh/sysadmin/')
 def fami_sysadmin():
     r = requests.get("https://www.familug.org/search/label/sysadmin")
     tree = BeautifulSoup(markup= r.text, features="html.parser")
